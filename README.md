@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Python program designed to parse flow logs and map each log entry to a tag based on a lookup table. The lookup table specifies the `(dstport, protocol)` combinations that determine the appropriate tag. The program outputs a count of matches for each tag and a count of occurrences for each port/protocol combination.
+This project is a Python program designed to parse a file containing flow log data and maps each row to a tag based on a lookup table. The lookup table is defined as a csv file, and it has 3 columns, `dstport, protocol, tag`. The dstport and protocol combination decide what tag can be applied. The program outputs a count of matches for each tag and a count of occurrences for each port/protocol combination.
 
 ## Features
 
