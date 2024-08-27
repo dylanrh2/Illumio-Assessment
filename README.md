@@ -29,6 +29,7 @@ This project is a Python program designed to parse a file containing flow log da
 1. **Prepare the input files**:
    - Ensure `input.txt` contains your flow logs in the specified format.
    - Ensure `lookup_table.csv` contains the correct mappings for `dstport`, `protocol`, and `tag`.
+   - Compare this example with `example_output.csv` to ensure it looks the same.
 
 2. **Run the Program**:
    - Execute the `main.py` script:
@@ -57,5 +58,4 @@ This project is a Python program designed to parse a file containing flow log da
   - `17` → `udp`
   - `1` → `icmp`
 - Logs that do not match any entry in the lookup table are considered "Untagged."
-
 
