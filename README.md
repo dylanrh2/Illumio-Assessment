@@ -16,18 +16,18 @@ This project is a Python program designed to parse flow logs and map each log en
 - Python 3.x
 - The following Python modules:
   - `csv`
-  - `collections`
+  - `collections` from `defaultdict`
 
 ## Files
 
-- `input.csv`: A file containing flow log data (version 2 only).
+- `input.txt`: A file containing flow log data (version 2 only).
 - `lookup_table.csv`: A CSV file defining the `dstport`, `protocol`, and `tag` mappings.
 - `main.py`: The main Python script that runs the program.
 
 ## Usage
 
 1. **Prepare the input files**:
-   - Ensure `input.csv` contains your flow logs in the specified format.
+   - Ensure `input.txt` contains your flow logs in the specified format.
    - Ensure `lookup_table.csv` contains the correct mappings for `dstport`, `protocol`, and `tag`.
 
 2. **Run the Program**:
@@ -38,7 +38,7 @@ This project is a Python program designed to parse flow logs and map each log en
    - The program will output the count of matches for each tag and the count of occurrences for each port/protocol combination.
 
 3. **Output Example**:
-   - The output will be printed in the terminal:
+   - The output will be stored in an output file `output.csv`:
      ```
      sv_P1: 2
      sv_P2: 2
@@ -63,10 +63,3 @@ This project is a Python program designed to parse flow logs and map each log en
 - **Adding New Tags**: Update the `lookup_table.csv` file with new `(dstport, protocol)` combinations and their corresponding tags.
 - **Changing Input Files**: Modify the file paths in the `main.py` script to use different input files if necessary.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-
-For any questions or support, please reach out to [Your Name] at [Your Email].
