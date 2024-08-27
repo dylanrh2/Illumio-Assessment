@@ -57,5 +57,5 @@ This project is a Python program designed to parse a file containing flow log da
   - `6` → `tcp`
   - `17` → `udp`
   - `1` → `icmp`
-- Logs that do not match any entry in the lookup table are considered "Untagged."
+- Logs that do not match any entry in the lookup table are considered "Untagged".
 
