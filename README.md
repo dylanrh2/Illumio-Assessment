@@ -52,14 +52,10 @@ This project is a Python program designed to parse flow logs and map each log en
 
 - The flow log data is version 2 and follows the specified format.
 - The lookup table is a CSV file with the columns `dstport`, `protocol`, and `tag`.
-- The protocol numbers are mapped as follows:
+- The protocol numbers are mapped as follows from [AWS]([URL to navigate](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)):
   - `6` → `tcp`
   - `17` → `udp`
   - `1` → `icmp`
 - Logs that do not match any entry in the lookup table are considered "Untagged."
 
-## Customization
-
-- **Adding New Tags**: Update the `lookup_table.csv` file with new `(dstport, protocol)` combinations and their corresponding tags.
-- **Changing Input Files**: Modify the file paths in the `main.py` script to use different input files if necessary.
 
